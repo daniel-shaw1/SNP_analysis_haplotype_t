@@ -2,9 +2,9 @@
 
 Pipeline:
 
-Trim reads
-Align reads with BWA
-Sam -> Bam
-MarK PCR duplicates
-Assign Read Groups
-Call Vars with GATK
+#Trim reads (trim.sh)
+#Align reads with BWA (bwa.sh)
+#Sam -> Bam (samtools)
+#MarK PCR duplicates (picard, markdups.sh)
+#Assign Read Groups (Picard, Assign_readgroups.sh)
+#Call Vars with GATK (GATK, gatk.sh)
