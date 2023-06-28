@@ -1,4 +1,4 @@
-# SNP_analysis_haplotype_t
+# Call variants from WGS
 
 These scripts were used to process WGS DNA sequencing obtained from SRA and create VCFs with variants for each dataset.
 Fastqs are trimed, aligned to the genome, and then processed for Variant calling.
