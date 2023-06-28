@@ -7,17 +7,17 @@ Pipeline:
 
 1. Trim reads (trimmomatic, trim.sh) QC filtering of Reads, removes adapters and low quality reads.
 
-#Align reads with BWA (BWA, bwa.sh) Aligns all trimmed reads to reference.
+2. #Align reads with BWA (BWA, bwa.sh) Aligns all trimmed reads to reference.
 
-#Sam -> Bam (samtools), Converts sam to bam for downstream analysis
+3.  #Sam -> Bam (samtools), Converts sam to bam for downstream analysis
 
-#MarK PCR duplicates (picard, markdups.sh),, Remove duplicated reads 
+4. #MarK PCR duplicates (picard, markdups.sh),, Remove duplicated reads 
 
-#Assign Read Groups (Picard, Assign_readgroups.sh), Read group assignment is essential for GATK 
+5. #Assign Read Groups (Picard, Assign_readgroups.sh), Read group assignment is essential for GATK 
 
-#Make new index file for bam, Index RG bam files, essential for GATK
+6. #Make new index file for bam, Index RG bam files, essential for GATK
 
-#Call Vars with GATK (GATK, gatk.sh), Turns bam alignment into VCF 
+7. #Call Vars with GATK (GATK, gatk.sh), Turns bam alignment into VCF 
 
 
 Trimming, alignments, and picard scripts will work on entire directory of samples.
